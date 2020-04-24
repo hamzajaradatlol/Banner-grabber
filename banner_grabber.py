@@ -1,6 +1,5 @@
 #banner grabber by iTryZz
 import socket
-from optparse import OptionParser
 import sys
 
 def creds():
@@ -26,7 +25,7 @@ def loop():
         try:
             s = socket.socket()
             s.connect((target, port))
-            s.send("+> Banner grabber by V01D <+".encode())
+            s.send("+> Banner grabber by iTryZz <+".encode())
             result = s.recv(1024).decode()
             print(result)
             print("") # Newline
